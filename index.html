@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,14 +10,16 @@
 </head>
 
 <!--Body-->
+
 <body class="Background">
-    
+
     <!--NAVBAR-->
     <div class="navbar">
         <a href="#home" class="active">Home</a>
+        <a href="#Slideshow">Slideshow</a>
         <a href="#about">About</a>
         <a href="#github">GitHub</a>
-        <a href="#contact">Contact</a>
+        <a onclick="openForm();" ondblclick="closeForm();" href="#contact">Contact</a>
     </div>
 
     <!--Breaks inserted to add space between Navbar and Heading-->
@@ -34,90 +37,182 @@
     <!--Video text-->
     <div class="video-text">
         <H1 class="head-text">Kishan Kumar's Portfolio</H1>
-            <p class="center">
-                <strong>
-                    <q>The Computer Programmer is a Creator of Universes for Which he Alone is the Lawgiver.
-                        <br> No playwright, No stage director, No Emperor, However Powerful, Has ever exercised such absolure authority to arreng a stae or <br>
-                        field of battle and to command such unswervingly dutiful actors or toops.
-                    </q>
-                    <br> - Jpseph Weizenbaum
-                    <br>
-                    <br> My name is Kishan Kumar. Welcome to my Portfolio Website. On it, I will tell you about My Background and experience.
-                    <br>
-                    <br>Thank You for Stopping By and Enjoy!
-                </strong>
-            </p>
+        <p class="center">
+            <strong>
+                <q>The Computer Programmer is a Creator of Universes for Which he Alone is the Lawgiver.
+                    <br> No playwright, No stage director, No Emperor, However Powerful, Has ever exercised such
+                    absolure authority to arreng a stae or <br>
+                    field of battle and to command such unswervingly dutiful actors or troops.
+                </q>
+                <br> - Joseph Weizenbaum
+                <br>
+                <br> My name is Kishan Kumar. Welcome to my Portfolio Website. On it, I will tell you about My
+                Background and Experience.
+                <br>
+                <br>Thank You for Stopping By and Enjoy!
+            </strong>
+        </p>
     </div>
+
+    <!-- Slideshow Section -->
+    <div id="Slideshow">
+        <div id="Slideshow_Background">
+            <div id="Slideshow_Container">
+                <!-- Slide 1 of 6 -->
+                <div class="mySlides fade" style="display: block;">
+                    <img src="./Image/Avatar.jpg" alt="Kishan-Kumar" class="Slideshow_Images">
+                    <div class="text">I am Available to Assist You on Your Project!</div>
+                </div>
+                <!-- Slide 2 of 6 -->
+                <div class="mySlides fade">
+                    <img src="./Image/HTMLCSSJS.png" alt="HTML_CSS_and_JavaScript" class="Slideshow_Images">
+                    <div class="text">I am Full-Stack Software Developer,
+                        <br>Trained in: <br>HTML, CSS and JavaScript.
+                    </div>
+                </div>
+                <!-- Slide 3 of 6 -->
+                <div class="mySlides fade">
+                    <img src="./Image/Python.png" alt="Python" class="Slideshow_Images">
+                    <div class="text">The Popular Programming Language Python.</div>
+                </div>
+                <!-- Slide 4 of 6 -->
+                <div class="mySlides fade">
+                    <img src="./Image/DOTNET.png" alt="C_Sharp_and_Dot_NET" class="Slideshow_Images">
+                    <div class="text">C#, .NET Framework, ASP.NET, MVC.</div>
+                </div>
+                <!-- Slide 5 of 6 -->
+                <div class="mySlides fade">
+                    <img src="./Image/SQL.png" alt="SQL_and_Database" class="Slideshow_Images">
+                    <div class="text">Back End Development, Database and SQL.</div>
+                </div>
+                <!-- Slide 6 of 6 -->
+                <div class="mySlides fade">
+                    <img src="./Image/coding.jpg" alt="Coding" class="Slideshow_Images">
+                    <div class="text"><a onclick="openForm();" class="head-text">Contact Me!</a></div>
+                </div>
+                <!-- Next and previous buttons -->
+                <a class="previous" onclick="plusSlides(-1)"><strong>❮</strong></a>
+                <a class="next" onclick="plusSlides(1)"><strong>❯</strong></a>
+            </div>
+            <br>
+            <!-- Slideshow Dots -->
+            <div style="text-align: center;">
+                <span class="dot active" onclick="currentSlide(1);"></span>
+                <span class="dot" onclick="currentSlide(2);"></span>
+                <span class="dot" onclick="currentSlide(3);"></span>
+                <span class="dot" onclick="currentSlide(4);"></span>
+                <span class="dot" onclick="currentSlide(5);"></span>
+                <span class="dot" onclick="currentSlide(6);"></span>
+            </div>
+        </div>
+    </div>
+    <!-- End of Slideshow Section -->
 
     <!--About Section-->
     <div class="row" id="about">
         <!-- Left Column -->
-         <div class="column-2">
+        <div class="column-2">
             <img src="./Image/html_custom.jpg" alt="Kishan Kumar">
-         </div>
-         <!-- Right column -->
-          <div class="column-1">
+        </div>
+        <!-- Right column -->
+        <div class="column-1">
             <H1>About</H1>
             <p>
-                I am a Software Developer Who loves to code! As a father of one, I enjoy time with my family, traveling and Food.
+                I am a Software Developer Who loves to code! As a Father of One Lovely Son, I enjoy time with my family,
+                traveling, Food and Music.
                 <br><br>
-                I am a Graduate of <a href="https://www.pitman-training.ie/" target="_blank">Pitman Training</a>'s Software Developer Boot Camp, and Trainded ad Experienced in the Following Web and Programming Languages: HTML, CSS, JavaScript, SQL C# and More.
+                I am a Graduate of <a href="https://www.pitman-training.ie/" target="_blank">Pitman Training</a>'s
+                Software Developer Boot Camp, and Trainded ad Experienced in the Following Web and Programming
+                Languages: HTML, CSS, JavaScript, SQL C# and More.
                 <br><br>
-                I am Full-Stack Developer and Would Love to Work With You and Your Project. <a href="#contact">Contact Me</a> Below!
+                I am Full-Stack Developer and Would Love to Work With You and Your Project. <a onclick="openForm();"
+                    class="contact">Contact Me</a> Below!
             </p>
-          </div>
+        </div>
     </div>
-    
-<!-- GitHub Section -->
+
+    <!-- GitHub Section -->
     <div class="row" id="github">
 
         <!-- Left Column -->
-         <div class="column-1">
+        <div class="column-1">
             <h1>GitHub</h1>
             <p>
                 You can view my coding project on my GitHub Profile Here:
                 <br>
-                <p class="center">
-                    <a href="https://github.com/Kishan-Kumar-7">Kishan Kumar's Repository.</a>
-                </p>
+            <p class="center">
+                <a href="https://github.com/Kishan-Kumar-7">Kishan Kumar's Repository.</a>
             </p>
-         </div>
+            </p>
+        </div>
 
-         <!-- Right Column -->
-          <div class="column-2">
-            <a href="https://github.com/Kishan-Kumar-7" target="_blank"><img src="./Image/GitHub.png" alt="GitHub Logo"></a>
-          </div>
+        <!-- Right Column -->
+        <div class="column-2">
+            <a href="https://github.com/Kishan-Kumar-7" target="_blank"><img src="./Image/GitHub.png"
+                    alt="GitHub Logo"></a>
+        </div>
     </div>
 
-<!-- Contact Section -->
+    <!-- Contact Section -->
     <div class="row" id="contact">
         <!-- contact image, Left column -->
-         <div class="column-2">
+        <div class="column-2">
             <img src="./Image/person.jpg" alt="Contact Image">
-         </div>
+        </div>
 
-         <!-- contact form, right column -->
-          <div class="column-1">
+        <!-- contact form, right column -->
+        <div class="column-1">
             <h1>Contact Me</h1>
-            
+
             <form action="https://formspree.io/f/mqazdkkk" method="post">
-                
+
                 <input type="text" placeholder="Please Enter Your Name Here">
-               
+
                 <input type="email" name="email" id="email" placeholder="Please Enter Your Email Address Here">
-              
+
                 <input type="text" name="massage" id="msg" placeholder="Please Type Your Massage Here">
 
                 <input type="submit" value="SUBMIT">
             </form>
-          </div>
+        </div>
     </div>
-<!-- footer section -->
+
+    <!-- Contact Button -->
+    <div id="Contact">
+        <button onclick="openForm();" class="Pop_Up_Button">CONTACT ME</button>
+
+        <div class="form-popup" id="myForm" ondblclick="closeForm();" style="display: none;">
+            <form action="https://formspree.io/f/mqazdkkk" method="post" class="form-container">
+                <h1>Contact</h1>
+
+                <label for="name"><strong>Name</strong></label>
+                <input type="text" placeholder="Please Enter Your Name Here..." name="name" required>
+
+                <label for="phone"><strong>Phone</strong></label>
+                <input type="tel" placeholder="Type Enter Your Phone Number Here...." name="phone" required>
+
+                <label for="email"><strong>Please Enter Your Email Address Here....</strong></label>
+                <input type="email" required placeholder="Please Enter Your Email Address Here...." name="email">
+
+                <label for="message"><strong>Message</strong></label>
+                <input type="text" placeholder="Please Enter Your Message Here....">
+                <br>
+                <br>
+                <button type="submit" class="btn">SUBMIT</button>
+                <button type="button" class="btn cancel" onclick="closeForm();">CLOSE</button>
+            </form>
+
+        </div>
+    </div>
+    <!-- footer section -->
     <footer>
         <p>
-            <p class="center">&copy; Kishan Kumar, <a href="https://github.com/Kishan-Kumar-7" target="_blank">Repository</a></p><br>
+        <p class="center">&copy; Kishan Kumar, <a href="https://github.com/Kishan-Kumar-7"
+                target="_blank">Repository</a></p><br>
         </p>
     </footer>
+    <script src="./script/main.js" defer></script>
 </body>
 <!--Body-->
+
 </html>
